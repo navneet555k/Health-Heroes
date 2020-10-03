@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@drawable/doctor_bg2"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="@android:color/white"
+        app:cardElevation="15dp"
+        android:layout_marginTop="80dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/ju_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JOIN US"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="28sp"
+                />
+            <EditText
+                android:id="@+id/signup_fullname_et"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ju_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:hint="Full Name"
+                />
+            <EditText
+                android:id="@+id/signup_phnum_et"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_fullname_et"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Phone Number"
+                />
+            <EditText
+                android:id="@+id/signup_email_et"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_phnum_et"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email ID"
+                />
+            <EditText
+                android:layout_centerHorizontal="true"
+                android:id="@+id/signup_pass_et"
+                android:layout_width="230dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_email_et"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+            <EditText
+                android:id="@+id/signup_conf_pass_et"
+                android:layout_width="230dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_pass_et"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                />
+            <LinearLayout
+                android:id="@+id/llt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/signup_conf_pass_et"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dctr_state_checkbox"
+                    android:layout_marginLeft="40dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I'm a doctor"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@id/dctr_state_checkbox"
+                    android:textSize="18sp"
+                    />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/signup_create_button"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:text="Create Account"
+                android:layout_below="@id/llt1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_layout_1"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

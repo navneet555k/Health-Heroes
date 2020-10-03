@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorViewActivity"
+    android:background="@drawable/doctor_bg2"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:elevation="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerInParent="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/doc_profile_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Doctor Profile"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/doc_profile_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doc_profile_title1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:padding="5dp"
+
+                android:text="Fullname"
+                />
+            <TextView
+                android:id="@+id/doc_profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doc_profile_fullname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textIsSelectable="true"
+                android:textSize="18sp"
+                android:text="Email ID"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/doc_profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doc_profile_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Phone"
+                android:textSize="18sp"
+                android:textIsSelectable="true"
+                android:padding="5dp"
+                android:layout_marginBottom="30dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

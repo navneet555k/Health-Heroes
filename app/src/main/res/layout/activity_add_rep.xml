@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddRepActivity"
+    android:background="@drawable/doctor_bg2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_centerInParent="true"
+        android:elevation="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/add_rep_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Report"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/add_rep_pname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Name"
+                android:layout_below="@id/add_rep_title1"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginTop="25dp"
+                android:textAllCaps="true"
+                />
+            <TextView
+                android:id="@+id/add_rep_pdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_below="@id/add_rep_pname"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                />
+            <EditText
+                android:id="@+id/add_rep_desc"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:hint="Add Description"
+                android:layout_below="@id/add_rep_pdate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:id="@+id/file_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No file uploaded"
+                android:layout_below="@id/add_rep_desc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:id="@+id/upload_doc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:background="@drawable/btn_layout_1"
+                android:padding="15dp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@android:color/white"
+                android:layout_below="@id/file_name_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+
+                />
+            <Button
+                android:id="@+id/upload_report_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Report"
+                android:background="@drawable/btn_layout_1"
+                android:padding="15dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_below="@id/upload_doc_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:layout_marginBottom="30dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

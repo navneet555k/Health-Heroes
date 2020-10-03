@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "550655220020",
+    "firebase_url": "https://healthfiles-6d251.firebaseio.com",
+    "project_id": "healthfiles-6d251",
+    "storage_bucket": "healthfiles-6d251.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550655220020:android:c1043a55cd88b154f42d61",
+        "android_client_info": {
+          "package_name": "magicfence.healthfiles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550655220020-913k94knbqdpmqvtlvthjn6b6qav44u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlKzghmWBZ3wIf3QOUhPTt5fmJuLmD62Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550655220020-913k94knbqdpmqvtlvthjn6b6qav44u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

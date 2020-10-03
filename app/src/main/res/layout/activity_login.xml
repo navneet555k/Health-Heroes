@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/doctor_bg2"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="10dp"
+        android:elevation="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/login_title"
+                android:text="LOGIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:padding="5dp"
+                android:layout_marginTop="30dp"
+                />
+            <EditText
+                android:id="@+id/login_email_et"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/login_title"
+                android:layout_marginTop="35dp"
+                />
+            <EditText
+                android:id="@+id/login_pass_et"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/login_email_et"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                />
+            <Button
+                android:id="@+id/login_pg_btn"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_layout_1"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:layout_below="@id/login_pass_et"
+                android:layout_centerHorizontal="true"
+                android:text="LOGIN"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="35dp"
+                />
+            <TextView
+                android:id="@+id/forgot_pass_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/login_pg_btn"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp"
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
