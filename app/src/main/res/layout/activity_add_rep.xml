@@ -81,6 +81,7 @@
                 android:layout_below="@id/file_name_tv"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
 
                 />
             <Button
@@ -93,7 +94,7 @@
                 android:textColor="@android:color/holo_red_dark"
                 android:layout_below="@id/upload_doc_button"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="5dp"
                 android:visibility="gone"
                 android:layout_marginBottom="30dp"
                 />

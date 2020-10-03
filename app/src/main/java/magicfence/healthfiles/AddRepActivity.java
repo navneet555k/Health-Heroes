@@ -142,7 +142,7 @@ public class AddRepActivity extends AppCompatActivity {
 
                     HashMap hashMap = new HashMap();
                     hashMap.put("desc",desc);
-                    hashMap.put("report",uriTask.toString());
+                    hashMap.put("report",formattedDate);
                     hashMap.put("doctor_id",currentUserID);
                     hashMap.put("date",formattedDate);
 
