@@ -3,7 +3,7 @@
     package="magicfence.healthfiles">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.Camera" />
 
@@ -14,7 +14,9 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddRepActivity"></activity>
+        <activity android:name=".ReportsActivity"></activity>
+        <activity android:name=".PrescriptionsActivity" />
+        <activity android:name=".AddRepActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".AddPrescActivity" />
         <activity android:name=".DoctorViewActivity" />
