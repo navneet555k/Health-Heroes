@@ -52,11 +52,22 @@
                 android:textAllCaps="true"
                 />
             <EditText
+                android:id="@+id/add_rep_title"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Report Title"
+                android:padding="10dp"
+                android:background="@drawable/btn_layout_1"
+                android:layout_below="@id/add_rep_pdate"
+                />
+            <EditText
                 android:id="@+id/add_rep_desc"
                 android:layout_width="250dp"
                 android:layout_height="80dp"
                 android:hint="Add Description"
-                android:layout_below="@id/add_rep_pdate"
+                android:layout_below="@id/add_rep_title"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 />

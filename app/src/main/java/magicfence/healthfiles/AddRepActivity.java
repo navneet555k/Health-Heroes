@@ -37,7 +37,7 @@ import java.util.Locale;
 public class AddRepActivity extends AppCompatActivity {
 
     private TextView NameTV,DateTV,fileNameTV;
-    private EditText DescET;
+    private EditText DescET,TitleET;
     private Button AddButton,SubmitButton;
     private FirebaseAuth mAuth;
     DatabaseReference patientsRef;
@@ -57,6 +57,7 @@ public class AddRepActivity extends AppCompatActivity {
 
         NameTV = (TextView) findViewById(R.id.add_rep_pname);
         DateTV = (TextView) findViewById(R.id.add_rep_pdate);
+        TitleET  = (EditText) findViewById(R.id.add_rep_title);
         DescET = (EditText) findViewById(R.id.add_rep_desc);
         AddButton = (Button) findViewById(R.id.upload_doc_button);
         SubmitButton = (Button) findViewById(R.id.upload_report_button);
@@ -87,10 +88,11 @@ public class AddRepActivity extends AppCompatActivity {
         AddButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String desc;
+                String desc,title;
                 desc = DescET.getText().toString();
+                title = TitleET.getText().toString();
 
-                if (!TextUtils.isEmpty(desc))
+                if (!(TextUtils.isEmpty(desc) && TextUtils.isEmpty(title)))
                 {
                     Intent uploadIntent = new Intent();
                     uploadIntent.setType("application/pdf");
@@ -125,8 +127,11 @@ public class AddRepActivity extends AppCompatActivity {
                     progressDialog.setMessage("We are adding the report to the database");
                     progressDialog.show();
 
+                    String desc = DescET.getText().toString();
+                    String title = TitleET.getText().toString();
+
                     StorageReference docRef = FirebaseStorage.getInstance().getReference()
-                            .child("Reports").child(patient_id).child(formattedDate + ".pdf");
+                            .child("Reports").child(patient_id).child(title + formattedDate + ".pdf");
 
                     docRef.putFile(data.getData()).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>()
                     {
@@ -138,15 +143,16 @@ public class AddRepActivity extends AppCompatActivity {
                     });
                     DatabaseReference reportsRef = FirebaseDatabase.getInstance().getReference()
                             .child("Patients").child(patient_id).child("Reports");
-                    String desc = DescET.getText().toString();
+
 
                     HashMap hashMap = new HashMap();
+                    hashMap.put("title",title);
                     hashMap.put("desc",desc);
                     hashMap.put("report",formattedDate);
                     hashMap.put("doctor_id",currentUserID);
                     hashMap.put("date",formattedDate);
 
-                    reportsRef.child(formattedDate).updateChildren(hashMap)
+                    reportsRef.child(title+formattedDate).updateChildren(hashMap)
                             .addOnCompleteListener(new OnCompleteListener() {
                                 @Override
                                 public void onComplete(@NonNull Task task) {

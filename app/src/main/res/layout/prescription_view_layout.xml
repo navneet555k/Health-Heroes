@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+        <TextView
+            android:id="@+id/presc_view_dname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor_Name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/presc_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presc_Date"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/presc_view_dname"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
