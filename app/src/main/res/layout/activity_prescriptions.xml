@@ -21,7 +21,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
+            <TextView
+                android:id="@+id/ptitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prescriptions"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:id="@+id/pmesg1"
+                android:layout_below="@id/ptitle1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Currently you don't have any prescriptions"
+                />
             <ScrollView
+                android:layout_below="@id/pmesg1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -29,7 +54,7 @@
                 >
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/prescriptions_recycler_view"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
