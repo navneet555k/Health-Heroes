@@ -24,12 +24,9 @@
 </ul>
 <h3>Firebase By Google</h3>
 <ul>
-  <li>What is Firebase</li>
-  <ul>
-    <li>Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business</li>
-  </ul>
-  </ul>
-
+    <li>Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business.Firebase basically makes backend easy for you.Our app relies heavily on it and we are thankful about it.</li>
+    <li>What is best about firebase is that it is actually free. Firebase is a Backend-as-a-Service — BaaS — and grew up into a next-generation app-development platform on Google Cloud Platform.It uses Google Cloud Platform which we couldn't use exactly cause we didn't had money so we turned to Firebase which is a very good alternative and we absolutely loved using it.</li>
+</ul>
 <h3>Special Notes :notes:</h3>
 <ul>
   <li>This app uses Firebase so if you clone this app all the data you enter would get stored in our database. So make sure to register your own app on Firebase in order see the data stored</li>
