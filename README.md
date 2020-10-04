@@ -1,5 +1,8 @@
 ## Health-Heroes
 <img src="https://cdn.vox-cdn.com/thumbor/1SrcuHFZ70PO7OPgSb2_DxM3gUk=/0x0:640x427/1820x1213/filters:focal(0x0:640x427):format(webp)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg" height="44" width="55"><img src="https://pbs.twimg.com/profile_images/1105378972156649472/9W16lxHj_400x400.png" height="50" width="50"><img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png" height="44" width="30">
+
+<img src="https://github.com/codenavneet/Health-Heroes/blob/main/gifs/clipped-gif.gif" height="400" width="700">
+
 <h3>Why are we building this application?</h3>
 <p>Handling medical files and prescriptions has always been a pain, moreover, in the age of social distancing, it makes complete sense to switch to a digital medium for handling medical paperwork. Keeping that in mind, we have designed a solution to completely eradicate the physical aspect of handling medical paperwork by the use of a specialized mobile app, which keeps track of your files and prescriptions.</p>
 
