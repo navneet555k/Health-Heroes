@@ -1,4 +1,4 @@
-# Health Files
+# Health-Heroes
 <img src="https://cdn.vox-cdn.com/thumbor/1SrcuHFZ70PO7OPgSb2_DxM3gUk=/0x0:640x427/1820x1213/filters:focal(0x0:640x427):format(webp)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg" height="44" width="55"><img src="https://pbs.twimg.com/profile_images/1105378972156649472/9W16lxHj_400x400.png" height="44" width="48"><img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png" height="44" width="48">
 
 ### Inspiration Behind Building this Application:-
@@ -14,12 +14,8 @@ As we all know that handling medical files and prescreptions is not an easy task
 
 ### Google Cloud Integration:-
 ![image](https://user-images.githubusercontent.com/53183532/95006766-5edc8900-0625-11eb-9538-eabe49b9457a.png)
-### Heroes On Board :sunglasses:
-Sanjay<br>
-Rishabh<br>
-Navneet<br>
-Mainak<br>
-Aryan<br>
+### Heroes On Board :sunglasses: <br>
+#### Sanjay,Navneet,Mainak,Aryan,Rishabh
 
 
 
