@@ -23,6 +23,12 @@
   <li>Firebase for storing user data(Details about Firebase given below</li>
 </ul>
 <h3>Firebase By Google</h3>
+<ul>
+  <li>What is Firebase</li>
+  <ul>
+    <li>Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business</li>
+  </ul>
+  </ul>
 
 <h3>Special Notes :notes:</h3>
 <ul>
