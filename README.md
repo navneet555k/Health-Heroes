@@ -39,17 +39,8 @@
 
 
 ### ScreenShots of The Application:-
-<img src="https://user-images.githubusercontent.com/53183532/95006797-ca265b00-0625-11eb-9c77-5ff1014a8838.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95006830-25f0e400-0626-11eb-8e2e-12bd352d3da1.png" width=400 height=600>
+![image](https://user-images.githubusercontent.com/53183532/95012102-46836300-0653-11eb-8bd5-033008c4ca9e.png)
 
----------------------------------------
-
-<img src="https://user-images.githubusercontent.com/53183532/95006894-e1197d00-0626-11eb-9ec4-476d47c68929.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95006913-1625cf80-0627-11eb-8b98-3984f887c821.png" width=400 height=600>
-
----------------------------------------
-
-<img src="https://user-images.githubusercontent.com/53183532/95006960-aebc4f80-0627-11eb-84ae-f86df1eb5afb.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95007126-be3c9800-0629-11eb-96dc-1fa959c231cc.png" width=400 height=600> 
-
-------------------------
 
 ### Google Cloud Integration:-
 ![image](https://user-images.githubusercontent.com/53183532/95006766-5edc8900-0625-11eb-9538-eabe49b9457a.png)
