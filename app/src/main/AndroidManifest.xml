@@ -14,7 +14,9 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReportsActivity"></activity>
+        <activity android:name=".RepViewActivity"></activity>
+        <activity android:name=".PresViewActivity" />
+        <activity android:name=".ReportsActivity" />
         <activity android:name=".PrescriptionsActivity" />
         <activity android:name=".AddRepActivity" />
         <activity android:name=".SettingsActivity" />
