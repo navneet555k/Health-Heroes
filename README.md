@@ -16,6 +16,14 @@
   <li>Go to the java folder where you can see all the java files.That is the main project</li>
   <li>Connect to emulator or mobile through USB to use the app after running  successfully</li>
 </ul>
+<h3>Resources and Languages</h3>
+<ul>
+  <li>Java</li>
+  <li>XML for UI</li>
+  <li>Firebase for storing user data(Details about Firebase given below</li>
+</ul>
+<h3>Firebase By Google</h3>
+
 <h3>Special Notes :notes:</h3>
 <ul>
   <li>This app uses Firebase so if you clone this app all the data you enter would get stored in our database. So make sure to register your own app on Firebase in order see the data stored</li>
