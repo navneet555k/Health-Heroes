@@ -35,7 +35,7 @@
 </ul>
 
 
-### ScreenShots of The Application:-
+### Screenshots of The Application:-
 ![image](https://user-images.githubusercontent.com/53183532/95012102-46836300-0653-11eb-8bd5-033008c4ca9e.png)
 
 
