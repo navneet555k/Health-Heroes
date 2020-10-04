@@ -12,7 +12,7 @@
         android:id="@+id/app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Health  Files"
+        android:text="Health  Heroes"
         android:fontFamily="@font/billabong"
         android:textColor="@android:color/white"
         android:textSize="50sp"
