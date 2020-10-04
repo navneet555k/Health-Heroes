@@ -4,6 +4,9 @@
 ### Inspiration Behind Building this Application:-
 As we all know that handling medical files and prescreptions is not an easy task.Moreover In this age of social distancing, it will be better if we try reducing direct contact as much as possible hence it makes complete sence to  switching to digital medium for handling medical paperwork.With all this in mind we have built a Java based mobile application that aims to ease the task of manually handling files making it safe as well as less cumbersome for doctors and patients.
 ### Workflow of Our Application:-
++ When you open the Application for the first time you will see a login or signup screen. (You only need to fill this once).
++ After that Once you signup/login you come to the dashboard where you get the following options-Myqr,Reports,Prescreption,Add Prescreption,VerifyDr,Profile,Settings.
++
 ![image](https://user-images.githubusercontent.com/53183532/95006709-c219eb80-0624-11eb-9f14-1acdcfc9cbc1.png)
 ### So How Does Our Application work???
 
