@@ -16,7 +16,7 @@
   <li>Go to the java folder where you can see all the java files.That is the main project</li>
   <li>Connect to emulator or mobile through USB to use the app after running  successfully</li>
 </ul>
-<h3>Special Notes</h3>
+<h3>Special Notes :notes:</h3>
 <ul>
   <li>This app uses Firebase so if you clone this app all the data you enter would get stored in our database. So make sure to register your own app on Firebase in order see the data stored</li>
   <li><a href="https://console.firebase.google.com/?pli=1">Visit the Firebase site for more knowledge on this</a></li>
