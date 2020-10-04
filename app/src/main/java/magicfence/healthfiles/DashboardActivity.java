@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class DashboardActivity extends AppCompatActivity {
-    private LinearLayout myQrLT,verifyLT,addPrescLT,settingsLT,addRepLT;
+    private LinearLayout myQrLT,verifyLT,addPrescLT,settingsLT,addRepLT,prescLLT,reportsLLT;
     private DatabaseReference docRef;
     private FirebaseAuth mAuth;
     String currentUserID;
@@ -32,7 +32,9 @@ public class DashboardActivity extends AppCompatActivity {
         verifyLT = (LinearLayout) findViewById(R.id.verify_dr_llt);
         addPrescLT = (LinearLayout) findViewById(R.id.add_presc_llt);
         settingsLT = (LinearLayout) findViewById(R.id.settings_llt);
+        prescLLT = (LinearLayout) findViewById(R.id.prescs_llt);
         addRepLT = (LinearLayout) findViewById(R.id.add_rep_llt);
+        reportsLLT = (LinearLayout) findViewById(R.id.reports_llt);
         docRef = FirebaseDatabase.getInstance().getReference().child("Doctors");
 
         docRef.addValueEventListener(new ValueEventListener() {
@@ -100,6 +102,20 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent settingsIntent = new Intent(DashboardActivity.this, SettingsActivity.class);
                 startActivity(settingsIntent);
+            }
+        });
+        prescLLT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pIntent = new Intent(DashboardActivity.this, PrescriptionsActivity.class);
+                startActivity(pIntent);
+            }
+        });
+        reportsLLT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pIntent = new Intent(DashboardActivity.this, ReportsActivity.class);
+                startActivity(pIntent);
             }
         });
 

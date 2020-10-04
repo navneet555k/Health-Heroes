@@ -1,8 +1,11 @@
 package magicfence.healthfiles;
 
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -14,6 +17,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -94,10 +98,14 @@ public class AddRepActivity extends AppCompatActivity {
 
                 if (!(TextUtils.isEmpty(desc) && TextUtils.isEmpty(title)))
                 {
-                    Intent uploadIntent = new Intent();
-                    uploadIntent.setType("application/pdf");
-                    uploadIntent.setAction(Intent.ACTION_GET_CONTENT);
-                    startActivityForResult(Intent.createChooser(uploadIntent,"PDF FILE"),12);
+                    if(isReadStoragePermissionGranted())
+                    {
+                        Intent uploadIntent = new Intent();
+                        uploadIntent.setType("application/pdf");
+                        uploadIntent.setAction(Intent.ACTION_GET_CONTENT);
+                        startActivityForResult(Intent.createChooser(uploadIntent,"PDF FILE"),12);
+                    }
+
                 }
                 else
                 {
@@ -107,6 +115,23 @@ public class AddRepActivity extends AppCompatActivity {
             }
         });
     }
+
+
+    public  boolean isReadStoragePermissionGranted() {
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
+                    == PackageManager.PERMISSION_GRANTED) {
+                return true;
+            } else {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 3);
+                return false;
+            }
+        }
+        else { //permission is automatically granted on sdk<23 upon installation
+            return true;
+        }
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable final Intent data) {
@@ -127,8 +152,8 @@ public class AddRepActivity extends AppCompatActivity {
                     progressDialog.setMessage("We are adding the report to the database");
                     progressDialog.show();
 
-                    String desc = DescET.getText().toString();
-                    String title = TitleET.getText().toString();
+                    final String desc = DescET.getText().toString();
+                    final String title = TitleET.getText().toString();
 
                     StorageReference docRef = FirebaseStorage.getInstance().getReference()
                             .child("Reports").child(patient_id).child(title + formattedDate + ".pdf");
@@ -139,8 +164,10 @@ public class AddRepActivity extends AppCompatActivity {
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot)
                         {
                             uriTask = taskSnapshot.getStorage().getDownloadUrl();
+
                         }
                     });
+
                     DatabaseReference reportsRef = FirebaseDatabase.getInstance().getReference()
                             .child("Patients").child(patient_id).child("Reports");
 
@@ -158,7 +185,7 @@ public class AddRepActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task task) {
                                     if (task.isSuccessful())
                                     {
-                                        Toast.makeText(AddRepActivity.this, "Sucess", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(AddRepActivity.this, "Success", Toast.LENGTH_SHORT).show();
                                         Intent homeIntent = new Intent(AddRepActivity.this, DashboardActivity.class);
                                         homeIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                         startActivity(homeIntent);
@@ -172,6 +199,7 @@ public class AddRepActivity extends AppCompatActivity {
 
                                 }
                             });
+
                 }
             });
 

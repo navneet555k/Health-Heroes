@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -26,16 +27,17 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView weightT, heightT,genderT,ageT;
     private Button SaveDetails;
     private Button editDetails;
+    private int i =0;
     private RelativeLayout saveCardView,editCardView;
     private FirebaseAuth mAuth;
-    private DatabaseReference mDatabase,dataRetrieve;
-    String currentUserID;
+    String currentUserID = FirebaseAuth.getInstance().getUid();
+    private DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("Patients/"+currentUserID+"/ProfileDetails");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
+        retreiveUserDetails(mDatabase);
         setContentView(R.layout.activity_profile);
-        currentUserID = FirebaseAuth.getInstance().getUid();
         heightT = (TextView)findViewById(R.id.users_height);
         weightT = (TextView)findViewById(R.id.users_weight);
         ageT = (TextView)findViewById(R.id.users_age);
@@ -48,7 +50,7 @@ public class ProfileActivity extends AppCompatActivity {
         editDetails = (Button) findViewById(R.id.editDetail_button);
         saveCardView = (RelativeLayout) findViewById(R.id.save_cardView);
         editCardView = (RelativeLayout) findViewById(R.id.edit_cardView);
-        mDatabase = FirebaseDatabase.getInstance().getReference("Patients/"+currentUserID+"/ProfileDetails");
+
         SaveDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,5 +92,37 @@ public class ProfileActivity extends AppCompatActivity {
         }
 
 
+    }
+    public void retreiveUserDetails(DatabaseReference mDatabase){
+        i=0;
+        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot snapshots : snapshot.getChildren()){
+                    if(i==0){
+                        ageT.setText(snapshots.getValue(String.class));
+                    }
+                    else if(i==1){
+                        genderT.setText(snapshots.getValue(String.class));
+
+                    }
+                    else if(i==2){
+                        heightT.setText(snapshots.getValue(String.class));
+
+                    }
+                    else if(i==3){
+                        weightT.setText(snapshots.getValue(String.class));
+                    }
+                    i++;
+                    Log.d("ProfileActivity",snapshots.getValue(String.class));
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 }
