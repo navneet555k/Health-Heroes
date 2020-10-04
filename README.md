@@ -5,25 +5,29 @@
 
 ### Workflow of Our Application:-
 ![image](https://user-images.githubusercontent.com/53183532/95006709-c219eb80-0624-11eb-9f14-1acdcfc9cbc1.png)
+
+
 <h3> Steps for using</h3>
 <ul>
   <li>Clone the repo</li>
   <li>Open Android Studio</li>
   <li>Open Project</li>
   <li>Go to the location where you have saved the project</li>
-  <li>Go to the flutter-app folder.That is the main project</li>
+  <li>Go to the java folder where you can see all the java files.That is the main project</li>
   <li>Connect to emulator or mobile through USB to use the app after running  successfully</li>
 </ul>
-### ScreenShots of The Application:-
-<img src="https://user-images.githubusercontent.com/53183532/95006797-ca265b00-0625-11eb-9c77-5ff1014a8838.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95006830-25f0e400-0626-11eb-8e2e-12bd352d3da1.png" width=400 height=600>
-<img src="https://user-images.githubusercontent.com/53183532/95006894-e1197d00-0626-11eb-9ec4-476d47c68929.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95006913-1625cf80-0627-11eb-8b98-3984f887c821.png" width=400 height=600>
-<img src="https://user-images.githubusercontent.com/53183532/95006960-aebc4f80-0627-11eb-84ae-f86df1eb5afb.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95007126-be3c9800-0629-11eb-96dc-1fa959c231cc.png" width=400 height=600> 
 <h3>Special Notes</h3>
 <ul>
   <li>This app uses Firebase so if you clone this app all the data you enter would get stored in our database. So make sure to register your own app on Firebase in order see the data stored</li>
   <li><a href="https://console.firebase.google.com/?pli=1">Visit the Firebase site for more knowledge on this</a></li>
+  <li>If you get compatibility issues go to android folder, right click and click on migrate and then migrate project to Android X.</li>
 </ul>
 
+
+### ScreenShots of The Application:-
+<img src="https://user-images.githubusercontent.com/53183532/95006797-ca265b00-0625-11eb-9c77-5ff1014a8838.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95006830-25f0e400-0626-11eb-8e2e-12bd352d3da1.png" width=400 height=600>
+<img src="https://user-images.githubusercontent.com/53183532/95006894-e1197d00-0626-11eb-9ec4-476d47c68929.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95006913-1625cf80-0627-11eb-8b98-3984f887c821.png" width=400 height=600>
+<img src="https://user-images.githubusercontent.com/53183532/95006960-aebc4f80-0627-11eb-84ae-f86df1eb5afb.png" width=400 height=600>  <img src="https://user-images.githubusercontent.com/53183532/95007126-be3c9800-0629-11eb-96dc-1fa959c231cc.png" width=400 height=600> 
 ### Google Cloud Integration:-
 ![image](https://user-images.githubusercontent.com/53183532/95006766-5edc8900-0625-11eb-9538-eabe49b9457a.png)
 <h3> Heroes On Board :sunglasses: </h3>
