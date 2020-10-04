@@ -20,7 +20,7 @@
 <ul>
   <li>Java</li>
   <li>XML for UI</li>
-  <li>Firebase for storing user data(Details about Firebase given below</li>
+  <li>Firebase for storing user data(Details about Firebase given below)</li>
 </ul>
 <h3>Firebase By Google</h3>
 <ul>
