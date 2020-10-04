@@ -36,7 +36,7 @@
 
 
 ### Screenshots of The Application:-
-![image](https://user-images.githubusercontent.com/53183532/95012102-46836300-0653-11eb-8bd5-033008c4ca9e.png)
+![image](https://user-images.githubusercontent.com/53183532/95013564-b2b79400-065e-11eb-9637-d3bddf3d0894.png)
 
 
 ### Google Cloud Integration:-
